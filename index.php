@@ -31,6 +31,6 @@
       <h5>Место для рекламы</h5>
     </aside>
   </div>
-  <?php require"blocks/footer.php" ?>
+  <?php require "blocks/footer.php" ?>
 </body>
 </html>
