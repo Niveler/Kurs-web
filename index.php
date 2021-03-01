@@ -1,18 +1,13 @@
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/style.css" rel="stylesheet" type="text/css"/>
   <title>Сайт преподователя</title>
 </head>
 <body>
-  <header>
-      <ul class="menu">
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Обо мне</a></li>
-        <li><a href="#">Ученикам</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-  </header>
+  <?php require "blocks/header.php" ?>
   <div class="poloska" style="background: url(img/glavnaya-poloska.jpg);
   background-size: cover; -webkit-background-size: cover; background-position: top;">
     <div class="poloska_centr">
@@ -28,14 +23,14 @@
             Приветствую Вас на моём сайте!
             Данный сайт предназначен для ознакомительных целей.
             Сайт построен студентом группы ПИНз-118 Оленьковым А.Г.
+            Тематика сайта "Сайт преподователя". Подробнее можно посмотреть
+            в разделе <a href="about.php">О сайте</a>.
           </p>
     </article>
     <aside>
       <h5>Место для рекламы</h5>
     </aside>
   </div>
-  <footer>
-    <p>© Сайт преподователя web технологии Быкова Артёма Алексантдровича</p>
-  </footer>
+  <?php require"blocks/footer.php" ?>
 </body>
 </html>
