@@ -46,7 +46,7 @@ div {
   line-height:30px; /*ровняем меню по вертикали*/
   border-right: 1px solid #6D765E; /*добавляем бордюр справа*/
 }
-a:hover {
+.header a:hover {
   background:#C3E28D;/*добавляем эффект при наведении*/
 }
 li {
