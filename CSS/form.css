@@ -1,0 +1,46 @@
+
+textarea {
+  resize: vertical;
+  padding: 8px;
+  border-radius:15px;
+  border:0;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.26);
+  height:150px;
+}
+textarea:hover {
+  border: 1px solid #aaa;
+}
+label {
+    float: left;
+    letter-spacing: 2px;
+    padding-right: 20px;
+}
+.field {
+  clear: both;
+  text-align: right;
+  line-height: 25px;
+  margin: 5px 0;
+}
+.main {
+  float: left;
+}
+input {
+  width: 523px;
+  height: 22px;
+  padding: 2px;
+  border-radius: 15px;
+  border: 0;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.26);
+}
+input:hover {
+  border: 1px solid #aaa;
+}
+.but {
+  float: left;
+  width: 120px;
+  height: 25px;
+  background: rgb(155,155,155)
+}
+.but:hover {
+  border: 1px solid #aaa;
+}
