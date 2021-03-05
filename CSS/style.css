@@ -48,7 +48,6 @@ div {
 }
 .header a:hover {
   background:rgb(204,204,204);/*добавляем эффект при наведении*/
-  border: 1px solid #aaa;
 }
 li {
   float: left;/*Размещаем список горизонтально для реализации меню*/
