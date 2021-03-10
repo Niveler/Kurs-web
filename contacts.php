@@ -35,19 +35,19 @@
     <div class="main">
       <div class="field">
         <label for="lb">Имя</label>
-        <input type="text" name="name" value="<?=$_SESSION["name"]?>" placeholder="Введите ваше имя"><br>
+        <input type="text" name="name" value="" placeholder="Введите ваше имя"><br>
       </div>
       <div class="field">
         <label for="lb">Email</label>
-        <input type="text" name="from" value="<?=$_SESSION["from"]?>" placeholder="example@example.ru" ><br>
+        <input type="text" name="from" value="" placeholder="example@example.ru" ><br>
       </div>
       <div class="field">
         <label for="lb">Тема</label>
-        <input type="text" name="issue" value="<?=$_SESSION["issue"]?>" placeholder="Тема сообщения" ><br>
+        <input type="text" name="issue" value="" placeholder="Тема сообщения" ><br>
       </div>
       <div class="field">
         <label for="lb">Сообщение</label>
-        <textarea name="message" rows="8" cols="70" placeholder="Ваше сообщение"><?=$_SESSION["message"]?></textarea>
+        <textarea name="message" rows="8" cols="70" placeholder="Ваше сообщение"></textarea>
       </div>
       <div class="field">
         <input class="but" id="submit" type="submit" name="submit" value="Submit">
