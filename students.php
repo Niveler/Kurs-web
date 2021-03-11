@@ -12,17 +12,14 @@
   background-size: cover; -webkit-background-size: cover; background-position: top;">
     <div class="poloska_centr">
       <h1>Студентам</h1>
-      <h4>На странице представлена информация о данном сайте:
-        цели создания, содержание, целевая аудитория.
+      <h4>
+        Текущая информация для студентов
       </h4>
     </div>
   </div>
   <div class="container">
     <article >
-          <h3>Данный сайт предназначен для ознакомительных целей.</h3>
-          <p>
-
-          </p>
+          <h3>Расписание занятий в институте</h3>
     </article>
   </div>
   <?php require "blocks/footer.php" ?>
