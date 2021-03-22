@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="/css/table.css">
   <title>Ученикам</title>
 </head>
 <body>
@@ -20,6 +21,11 @@
   <div class="container">
     <article >
           <h3>Расписание занятий в институте</h3>
+          <table>
+            <tr>
+              <td>Дата</td><td>Дисциплина</td><td>Кабинет</td>
+            </tr>
+          </table>
     </article>
   </div>
   <?php require "blocks/footer.php" ?>

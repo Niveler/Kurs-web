@@ -6,5 +6,8 @@
       <li><a href="students.php">Студентам</a></li>
       <li><a href="contacts.php">Контакты</a></li>
     </ul>
+    <ul class="autoriz">
+        <li class="auto"><a href="autoriz.php">Авторизация</a></li>
+    </ul>
 </header>
  </div>

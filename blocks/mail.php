@@ -3,20 +3,20 @@
 <meta charset="UTF-8" />
 
 <?php
-    $to = "olenkov.ag@vyksa-okrug.ru"; //мейл получателя
+    //Сделать проверку
     $name = $_POST ["name"];
-    $from = $_POST ["from"];
+    $umail = $_POST ["from"];
     $issue = $_POST ["issue"];
     $message = $_POST ["message"];
-    // Формируем сообщение для отправки
-    $mes = "Имя: $name \nE-mail: $from \nТема: $issue \nСообщение: $message";
-    // Пытаемся отправить письмо по заданному адресу
-    $send = mail ($to, $issue, $mes, "Content-type:text/plain; charset = UTF-8\r\nFrom:$to");
-    if($send == 'true')
+    //Подключемся к БД и таблице
+    $conect = mysqli_connect ("localhost", "adm", "Bykov!123" ) or die("Ошибка");
+    mysqli_select_db($conect, "user_db");
+    
+    $sql = "INSERT INTO `feedback` (`feed_id`, `uname`, `umail`, `theme`, `message`) VALUES (NULL, '$name', '$umail', '$issue', '$message')";
+    $result = mysqli_query($conect, $sql) or die("Ошибка записи в БД");
+    if($result = true)
     {
-      echo "Сообщение отправлено";
-    }
-    else {
-      echo "Что-то не так";
-    }
+        echo "Ваше сообщение добавлено.";
+        echo "<meta http-equiv='refresh' content='3; url=/contacts.php'>";
+      }
  ?>

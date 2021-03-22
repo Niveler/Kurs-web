@@ -50,7 +50,7 @@
         <textarea name="message" rows="8" cols="70" placeholder="Ваше сообщение"></textarea>
       </div>
       <div class="field">
-        <input class="but" id="submit" type="submit" name="submit" value="Submit">
+        <input class="but" id="submit" type="submit" name="submit" value="Отправить">
       </div>
     </div>
     </form>

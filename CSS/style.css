@@ -37,6 +37,19 @@ div {
     top: 30px;
     transform: translateX(-50%);
 }
+.autoriz {
+  list-style-type: none;/*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 0; /*убираем отступы*/
+  margin-top: 0;/*делаем отступ сверху*/
+  background:rgb(245, 243, 243); /*добавляем фон всему меню (заменив этот параметр, вы поменяете цвет всего меню)*/
+  height: 30px; /*задаем высоту*/
+  text-align: center;
+  position: absolute;
+    left: 95%;
+    top: 30px;
+    transform: translateX(-95%);
+}
 .header a {
   text-decoration: none; /*убираем подчеркивание текста ссылок*/
   background:rgb(245, 243, 243); /*добавляем фон к пункту меню (заменив этот параметр, вы поменяете цвет всех пунктов меню)*/
@@ -49,10 +62,17 @@ div {
 .header a:hover {
   background:rgb(204,204,204);/*добавляем эффект при наведении*/
 }
+li:auto {
+  display: inline;
+  float: right;
+}
 li {
   float: left;/*Размещаем список горизонтально для реализации меню*/
   display: list-item;
   text-align: center;
+}
+.auto {
+  float: right;
 }
 .poloska {
     display: flex;
