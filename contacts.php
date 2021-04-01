@@ -31,7 +31,7 @@
           <p>Вы можете написать мне сообщение, воспользовавшись формой обратной связи.</p>
           <br>
 
-    <form  id="formy" method="post" action="blocks/mail.php">
+    <form  id="formy" method="post" action="scripts/mail.php">
     <div class="main">
       <div class="field">
         <label for="lb">Имя</label>

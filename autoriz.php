@@ -4,11 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/form.css">
-    <link rel="stylesheet" href="/css/table.css">
   <title>Список сообщений</title>
 </head>
 <body>
-  <form class="autoriz" action="blocks/login.php" method="get">
+  <form class="autoriz" action="scripts/login.php" method="get">
     <div class="main">
       <div class="field">
         <label for="lb">Логин</label>

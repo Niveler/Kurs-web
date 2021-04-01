@@ -134,7 +134,6 @@ article {
 }
 aside {
     width: 25%;
-    text-align: center;
     padding-bottom: 30px;
     background-color: #ececec;
 }
@@ -157,4 +156,16 @@ footer p {
 }
 header, footer {
     align-items: center;
+}
+article ul {
+    margin: 6px 6px 0 50px;
+    text-align: justify;
+}
+.section {
+  display: flex;
+  overflow-y: auto;
+  scroll-snap-type: y;
+}
+.section__item {
+  scroll-snap-align: start;
 }

@@ -28,12 +28,23 @@
           </p><br>
           <h3>Полезное для студентов</h3>
           <p>
-            Вся полезная информация для студентов расположена на
-            странице - <a href="students.php">Студентам</a>.
-          </p>
+            В разделе <a href="students.php">Студентам</a> Вы можете посмотреть
+            информацию для студентов. Уточнить моё расписание лекций.
+          </p><br>
+          <h3>Для связи</h3>
+            <p>
+              В разделе <a href="contacts.php">Контакты</a> находятся мои
+              контактные данные для связи со мной. Также есть форма обратной связи,
+              по которой Вы можете задать мне вопрос.
+            </p>
     </article>
     <aside>
-      <h5>Место для рекламы</h5>
+      <div class="section">
+        <div class="section_item">Item1</div>
+        <div class="section_item">Item2</div>
+        <div class="section_item">Item3</div>
+        <div class="section_item">Item4</div>
+      </div>
     </aside>
   </div>
   <?php require "blocks/footer.php" ?>

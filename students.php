@@ -23,7 +23,8 @@
           <h3>Расписание занятий в институте</h3>
           <table>
             <tr>
-              <td>Дата</td><td>Дисциплина</td><td>Кабинет</td>
+              <th>Дата</th><th>Дисциплина</th><th>Кабинет</th><th>Группа</th>
+              <?php include "scripts/schedule.php" ?>
             </tr>
           </table>
     </article>

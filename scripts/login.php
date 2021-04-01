@@ -1,4 +1,5 @@
 <?php
+  //mysqli - это более новый вариант драйвера созданный специально под php 5
   /*Получаем данные с формы авторизации*/
   $login = filter_var(trim($_GET['login']), FILTER_SANITIZE_STRING);
   $pass = filter_var(trim($_GET['pass']), FILTER_SANITIZE_STRING);
@@ -13,9 +14,9 @@
     $r = mysqli_fetch_array ($q);
     if($pass == $r['user_pass']) // Если пароль верный то выводим таблицу с сообщениями
     {
-      echo "Список сообщений для ".$login."<hr>";
+      echo "Список сообщений для ".$login."<a href = '/index.php'>Выход</a>"."<hr>";
       $sql = "SELECT * FROM `feedback`"; // Формируем sql запрос
-      $queryfeedback = mysqli_query($conect, $sql);
+      $queryfeedback = mysqli_query($conect, $sql); //многомерный массив данных
       echo "<table border = 1>";
       echo "<tr>";
       echo "<td> Имя </td>" ."<td>Email: </td>" ."<td>Тема: </td>" ."<td>Сообщение: </td>";
@@ -31,9 +32,6 @@
           echo "</tr>";
         }
       echo "</table>";
-      //$session_id=md5($r['user_pass']);
-      //setcookie ("session_id", $session_id);
-      //
     }
     else
     {
