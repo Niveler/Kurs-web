@@ -9,9 +9,9 @@
     $issue = $_POST ["issue"];
     $message = $_POST ["message"];
     //Подключемся к БД и таблице
-    $conect = mysqli_connect ("localhost", "adm", "Bykov!123" ) or die("Ошибка");
+    $conect = mysqli_connect ("localhost", "adm", "Aa123" ) or die("Ошибка");
     mysqli_select_db($conect, "user_db");
-    
+
     $sql = "INSERT INTO `feedback` (`feed_id`, `uname`, `umail`, `theme`, `message`) VALUES (NULL, '$name', '$umail', '$issue', '$message')";
     $result = mysqli_query($conect, $sql) or die("Ошибка записи в БД");
     if($result = true)

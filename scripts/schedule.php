@@ -1,5 +1,5 @@
 <?php
-  $conect = mysqli_connect ("localhost", "adm", "Bykov!123" ) or die("Ошибка");
+  $conect = mysqli_connect ("localhost", "adm", "Aa123" ) or die("Ошибка");
   mysqli_select_db($conect, "user_db");
 
   $sql = "SELECT * FROM `schedule`"; // sql запрос к таблице

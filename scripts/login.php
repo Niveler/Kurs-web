@@ -4,7 +4,7 @@
   $login = filter_var(trim($_GET['login']), FILTER_SANITIZE_STRING);
   $pass = filter_var(trim($_GET['pass']), FILTER_SANITIZE_STRING);
   //Подключаемся к БД и таблице
-  $conect = mysqli_connect ("localhost", "adm", "Bykov!123" ) or die("Ошибка");
+  $conect = mysqli_connect ("localhost", "adm", "Aa123" ) or die("Ошибка");
   mysqli_select_db($conect, "user_db");
   //Проверяем Логин и Пароль в БД
   if(isset($_GET['submit']))

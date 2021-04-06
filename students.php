@@ -22,11 +22,30 @@
     <article >
           <h3>Расписание занятий в институте</h3>
           <table>
+            <thead>
             <tr>
               <th>Дата</th><th>Дисциплина</th><th>Кабинет</th><th>Группа</th>
-              <?php include "scripts/schedule.php" ?>
             </tr>
+            </thead>
+            <tbody>
+                <?php include "scripts/schedule.php" ?>
+            </tbody>
           </table>
+          <h3>Список методических указаний</h3>
+          <table>
+            <thead>
+            <tr>
+              <th>Дисциплина</th><th>Название</th><th>Скачать</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <?php include "scripts/docs.php" ?>
+              </tr>
+            </tbody>
+
+
+        </table>
     </article>
   </div>
   <?php require "blocks/footer.php" ?>
