@@ -13,7 +13,7 @@
     <div class="poloska_centr">
       <h1>Сайт преподователя</h1>
       <h2>WEB технолохии</h2>
-      <h4>Быкова Артёма Алексантдровича</h4>
+      <h4>Быкова Артёма Александровича</h4>
     </div>
   </div>
   <div class="container">
@@ -38,14 +38,6 @@
               по которой Вы можете задать мне вопрос.
             </p>
     </article>
-    <aside>
-      <div class="section">
-        <div class="section_item">Item1</div>
-        <div class="section_item">Item2</div>
-        <div class="section_item">Item3</div>
-        <div class="section_item">Item4</div>
-      </div>
-    </aside>
   </div>
   <?php require "blocks/footer.php" ?>
 </body>
