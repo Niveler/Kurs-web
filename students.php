@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  <script src="scripts/footer_date.js"></script>
   <link rel="stylesheet" href="/css/table.css">
   <title>Ученикам</title>
 </head>
-<body>
+<body onload="clockTimer();">
   <?php require "blocks/header.php" ?>
   <div class="poloska" style="background: url(img/student.jpg);
   background-size: cover; -webkit-background-size: cover; background-position: top;">
@@ -19,7 +21,7 @@
     </div>
   </div>
   <div class="container">
-    <article >
+    <article class="all">
           <h3>Расписание занятий в институте</h3>
           <table>
             <thead>

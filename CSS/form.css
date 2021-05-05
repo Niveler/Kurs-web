@@ -23,6 +23,7 @@ label {
 }
 .main {
   float: left;
+  margin-left: 35%;
 }
 input {
   width: 523px;

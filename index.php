@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  <script src="scripts/footer_date.js"></script>
   <title>Сайт преподователя</title>
 </head>
-<body>
+<body onload="clockTimer();">
   <?php require "blocks/header.php" ?>
   <div class="poloska" style="background: url(img/glavnaya-poloska.jpg);
   background-size: cover; -webkit-background-size: cover; background-position: top;">
@@ -38,6 +40,15 @@
               по которой Вы можете задать мне вопрос.
             </p>
     </article>
+      <aside class="right">
+        <div class="section">
+          <div class="section__item" style="background: url(img/gallery/1.jpg); background-size: cover;"></div>
+          <div class="section__item" style="background: url(img/gallery/2.jpg); background-size: cover;"></div>
+          <div class="section__item" style="background: url(img/gallery/3.jpg); background-size: cover;"></div>
+          <div class="section__item" style="background: url(img/gallery/4.jpg); background-size: cover;"></div>
+        </div>
+      </aside>
+
   </div>
   <?php require "blocks/footer.php" ?>
 </body>

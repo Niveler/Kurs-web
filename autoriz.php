@@ -4,10 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/form.css">
+      <script src="scripts/valid_auth.js"></script>
   <title>Список сообщений</title>
 </head>
 <body>
-  <form class="autoriz" action="scripts/login.php" method="get">
+  <!--Метод GET использую специально для Лаб. работы (показать что он есть)
+  Я знаю что пара: логин, пароль; передаются в открытом виде-->
+  <form name="auth" class="autoriz" action="scripts/login.php" method="get" onsubmit = "return validate_form();">
     <div class="main">
       <div class="field">
         <label for="lb">Логин</label>
