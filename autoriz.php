@@ -1,3 +1,7 @@
+<?php
+$value= "Мои куки";
+setcookie("Test", $value, time()+86400);
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>

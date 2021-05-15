@@ -17,6 +17,8 @@
       echo "Список сообщений для ".$login."<a href = '/index.php'>Выход</a>"."<hr>";
       $sql = "SELECT * FROM `feedback`"; // Формируем sql запрос
       $queryfeedback = mysqli_query($conect, $sql); //многомерный массив данных
+      echo "<link rel='stylesheet' href='/css/form.css'>";
+      echo "<link rel='stylesheet' href='/css/table.css'>";
       echo "<table border = 1>";
       echo "<tr>";
       echo "<td> Имя </td>" ."<td>Email: </td>" ."<td>Тема: </td>" ."<td>Сообщение: </td>";
@@ -31,7 +33,13 @@
           echo "<td>".$feedline['message'] ."</td>";
           echo "</tr>";
         }
-      echo "</table>";
+      echo "</table>". "<hr>";
+      //Работа с cookie
+      echo "<H3>" ."Наши куки:" ."<br>";
+      echo @$_COOKIE['Test']; //Вывод куки
+      echo "<form method='get' action='scripts/del_cookie.php'>";
+      echo "<input type='submit' value='Удалить'>"; //Кнопка удаления
+      echo "</form>";
     }
     else
     {
